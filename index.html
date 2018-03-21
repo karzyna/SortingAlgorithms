@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sorting Algorithms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="scripts/bootstrap/css/bootstrap.css">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="content/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="content/favicon//apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="content/favicon//apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="content/favicon//apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="content/favicon//apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="content/favicon//apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="content/favicon//apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="content/favicon//apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="content/favicon//apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="content/favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="content/favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="content/favicon//favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="content/favicon//favicon-16x16.png">
+        <link rel="manifest" href="content/favicon//manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+    <body>
+        <div class="jumbotron-fluid  bg-secondary">
+            <div class="header"> 
+                <div class="container text-white text-center p-3">
+                    <h1 class="display-2"> Sorting Algorithms </h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row my-5">
+                     <div  class="col-sm-8 input-group">
+                         <input type="number" id="numbers"  class="form-control" placeholder="Enter at least 2 numbers to be sorted"  step="1">
+                    </div>
+                    <div class="col-sm-2">
+                        <input class="btn-block" type="button" id="btnadd" value="Add">
+                    </div>
+                    <div class="col-sm-2">
+                        <input  class="btn-block" type="button" id="btnclear" value="Clear" >
+                    </div>
+            </div>
+        
+            <h6 class=" text-muted"> To sort: </h6>
+            
+            <div class="row card">
+                <div class="card-block  p-3">
+                <ul id="toSort" class="toSort">
+                </ul>
+                </div>
+                
+            </div>
+            
+            <div class="row my-5">
+                <select onchange="enableBtn();" id="selectOrder" class="col" required>
+                    <option value="0" disabled selected hidden>Select your sorting order</option>
+                    <option value="Asc">Ascending</option>
+                    <option value="Desc">Descending</option>
+                </select>
+                <div class="col-sm-2"></div>
+                <select onchange="enableBtn();" id="selectMethod" class="col" required>
+                    <option value="0" disabled selected hidden>Select your sorting method</option>
+                    <option value="1">Bubble</option>
+<!--                    <option value="2">Quick</option>-->
+                    <option value="3">Select</option>
+                    <option value="4">Insertion</option>
+                    <option value="5">StupidBubble</option>
+                    <option value="6">Crazy</option>
+                </select>
+            </div>
+            
+            <div class="row ">
+                   <button id="btnsort" type="button"  class="btn btn-large btn-block" disabled>Sort</button> 
+            </div>
+            
+            <div id="tablesection">
+            <div  id="tablewrapper">
+                <div class="row  my-5 ">
+                    <div class="col-sm-4 align-content-center">
+                        <h6> RESULT TABLE </h6>
+                   </div>
+                        <div class="col-sm-4 offset-sm-4 align-content-end fluid">
+                            <label for="#filter"> Filter Algorithms: </label>
+                            <select id="filter" onchange="filtr();">  
+                                <option value="0">All</option>
+                                <option value="1">Bubble</option>
+<!--                                <option value="2">Quick</option>-->
+                                <option value="3">Select</option>
+                                <option value="4">Insertion</option>
+                                <option value="5">Stupid bubble</option>
+                                <option value="6">Crazy</option>
+                            </select>
+                        </div>
+                </div>
+                <table id="results" class="table table-bordered .table-hover" >
+                    <thead>
+                    <tr>
+                        <th scope="col">Sorting Alg</th>
+                        <th scope="col" >Before</th>
+                        <th scope="col">After</th>
+                        <th scope="col"  >Time</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                        
+                </table>
+            </div>
+               <button id="btnsave" type="button"  class="btn btn-large btn-block mb-5">Save results</button> 
+            </div>
+            
+        </div>
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/tether.js"></script>
+        <script src="scripts/popper.min.js"></script>
+        <script src="scripts/bootstrap/js/bootstrap.js"></script>
+        <script src="javascript.js" type="text/javascript" property=""></script>
+            
+            
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--Kaszaaaaaaaaaaa kocham -->

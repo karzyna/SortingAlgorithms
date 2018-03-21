@@ -1,0 +1,23 @@
+
+
+.toSort {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: 1.75rem;
+    
+}
+
+.toSort li{
+    display: inline;
+}
+
+#results {
+     table-layout:fixed !important;
+     max-width: inherit;
+}
+
+td{
+    max-width: 25% !important;
+    word-break: break-all;
+}
